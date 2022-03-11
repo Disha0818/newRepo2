@@ -19,11 +19,11 @@ public class DragDrop1 {
 		driver.get("https://testautomationpractice.blogspot.com/");
 		WebElement firstn = driver.findElement(By.xpath("//p[contains(text(),'Drag me')]"));
 		WebElement secd = driver.findElement(By.xpath("//p[contains(text(),'Drop here')]"));
-		Thread.sleep(4000);
+		Thread.sleep(3000);
 		a.dragAndDrop(firstn, secd).build().perform();
 		Thread.sleep(5000);
 		driver.navigate().refresh();
-		Thread.sleep(4000);
+		Thread.sleep(3000);
 		
 		
 		WebElement firstn1 = driver.findElement(By.xpath("//h5[text()='Mr John']"));
